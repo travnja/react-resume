@@ -1,0 +1,23 @@
+
+.menu{
+    list-style-type: none;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    overflow: hidden;
+    border: 1px solid white;
+
+}
+
+.menu li{
+    margin-left: -3rem;
+    float: bottom;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.menu li:hover{
+    background-color: rgb(255, 217, 0);
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}

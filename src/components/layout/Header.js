@@ -9,7 +9,7 @@ import CoverImage from "../../images/cover.JPG";
 function Header() {
     return (
         <>
-            <div className={classes.stripe} />
+            <div className={classes.stripe} id="home"/>
             <img src={CoverImage} className={classes.cover} alt="Estonian beach in winter"/>
             <div className={classes.profile}>
                 <Profile />
