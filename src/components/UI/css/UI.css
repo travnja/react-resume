@@ -1,0 +1,21 @@
+.clickable-icon{
+    width: 2rem;
+    height: auto;
+    padding: .3rem;
+}
+
+.clickable-icon:hover{
+    /* border: 2px solid white; */
+    border-radius: 20%; 
+    background-color: rgb(255, 217, 0);
+}
+
+.card{
+    text-align: center;
+    display:flex;
+}
+.white-stripe{
+    background-color: white;
+    height: .5rem;
+    width: 100%;
+}
