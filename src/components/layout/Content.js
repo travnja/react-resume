@@ -1,8 +1,9 @@
-import Education from "./Education";
 
+
+import AboutMe from "./AboutMe";
 import classes from "./css/Content.module.css";
-import Menu from "./Menu";
-import Summary from "./Summary";
+import Projects from "./Projects";
+import Highlights from "./Highlights";
 
 function Content(){
     return (
@@ -10,13 +11,13 @@ function Content(){
             {/* <PersonalDetails /> */}
             <div className={classes.menu}>
                 {/* <Menu /> */}
-                <Summary />
+
+                <Highlights />
             </div>
 
             <div className={classes.text}>
-                <Education />
-                <Education />
-                <Education />
+                <AboutMe />
+                <Projects />
             </div>
         </section>
     );

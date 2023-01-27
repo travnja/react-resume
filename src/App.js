@@ -12,6 +12,9 @@ function App() {
             <div className="content">
                 <Content />
             </div>
+            <a href="https://www.flaticon.com/free-icons/school" title="school icons">
+                School icons created by Smashicons - Flaticon
+            </a>
         </div>
     );
 }

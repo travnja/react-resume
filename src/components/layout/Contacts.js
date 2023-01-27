@@ -6,7 +6,7 @@ import info from "../../info/info-context";
 import LinkedinIcon from "../../images/social-networks/Linkedin.png";
 import GithubIcon from "../../images/social-networks/Github.png";
 
-function PersonalDetails() {
+function Contacts() {
     return (
         <>
             <div className={classes.list}>
@@ -21,4 +21,4 @@ function PersonalDetails() {
     );
 }
 
-export default PersonalDetails;
+export default Contacts;
