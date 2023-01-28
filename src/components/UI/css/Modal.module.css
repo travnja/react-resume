@@ -10,7 +10,7 @@
 
 .modal {
   position: fixed;
-  top: 10vh;
+  top: 10rem;
   left: 5%;
   width: 90%;
   padding: 1rem;
@@ -29,6 +29,8 @@
 }
 
 .description {
+    max-height: 45rem;
+    overflow-y: auto;
     padding: 3%;
     text-align: center;
     background-color: rgb(99, 99, 99);
@@ -47,4 +49,8 @@
     background-color: rgb(255, 217, 0);
     color: black;
     cursor: pointer;
+}
+
+.modal hr{
+  margin: 2rem 0; 
 }

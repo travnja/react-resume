@@ -84,6 +84,7 @@
 
 .front-image{
     object-fit: cover;
+    width: inherit;
     height: inherit;
 }
 
@@ -94,4 +95,23 @@
 .image-detail img{
     object-fit: cover;
     width: inherit;
+}
+
+.show-more{
+    height: 2rem;
+    width: 10rem;
+    border: 1px solid white;
+    background-color: rgb(99, 99, 99);
+    color: white;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.show-more:hover{
+    background-color: rgb(255, 217, 0);
+    font-weight: bold;
+    color: black;
+    box-shadow: 1px;
+    transition: all .2s ease;
+    cursor: pointer;
 }
