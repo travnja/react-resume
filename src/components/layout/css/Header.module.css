@@ -1,6 +1,5 @@
 .header-stripe {
     position: sticky;
-    border-bottom: 4px solid white;
     width: 100%;
     height: 3rem;
     transition: var(--transition-fast);
@@ -46,7 +45,7 @@
     font-weight: bold;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 420px){
     .header {
         margin: 0 25%;
     }

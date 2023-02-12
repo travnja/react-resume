@@ -1,7 +1,9 @@
 .mentions {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    display: contents;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .mentions a {

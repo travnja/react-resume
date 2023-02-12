@@ -6,7 +6,6 @@ import HomeIcon from "../../images/icons/homeIcon.png";
 import BurgerIcon from "../UI/BurgerIcon";
 
 import Menu from "./Menu";
-import Modal from "../UI/Modal";
 
 function Header() {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -27,7 +26,9 @@ function Header() {
 
     return (
         <>
-            <div className={isMenuOpen ? classes["header-stripe-active"]: classes["header-stripe"]}>
+            <div
+                className={isMenuOpen ? classes["header-stripe-active"] : classes["header-stripe"]}
+            >
                 <header className={classes.header}>
                     <BurgerIcon onClick={menuToggleHandler} isOpen={isMenuOpen} />
                     <Link to="/">
@@ -49,7 +50,7 @@ function Header() {
                     </div>
                 </header>
             </div>
-            {isMenuOpen && <Menu />}
+            {isMenuOpen && <Menu onCloseMenu={menuToggleHandler} />}
         </>
     );
 }

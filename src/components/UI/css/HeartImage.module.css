@@ -1,0 +1,11 @@
+.heart {
+    width: 5rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;;
+}
+
+.heart img {
+    object-fit: contain;
+    width: inherit;
+}

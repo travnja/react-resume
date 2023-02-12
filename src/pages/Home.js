@@ -1,13 +1,14 @@
-import Header from "../components/layout/Header";
-import Content from "../components/layout/Content";
-import Mentions from "../components/layout/Mentions";
+import Introduction from "../components/layout/Introduction";
+// import ProfileInformation from "../components/layout/ProfileInformation";
+import Heart from "../components/UI/HeartImage";
 
 function HomePage() {
     return (
         <div className="layout">
-            <p>Hi, my name is</p>
-            <h1>Honza Trávníček</h1>
-            <Mentions />
+            <Introduction />
+            {/* <ProfileInformation /> */}
+            <Heart />
+            
         </div>
     );
 }

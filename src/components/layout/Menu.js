@@ -1,25 +1,29 @@
+import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
+import useEscapeKey from "../../hooks/use-escape";
 
 import classes from "./css/Menu.module.css";
 
-function Menu() {
+function Menu({onCloseMenu}) {
 
-    const classFunction = ({ isActive }) => isActive ? classes.active : undefined;
+    useEscapeKey(onCloseMenu);
+
     return (
-        <div className={classes.menu}>
-            <div className={classes["menu-items"]}>
+        createPortal(
+        <div className={classes.menu} onClick={onCloseMenu}>
+            <div className={classes["menu-items"]} onClick={(event) => {event.stopPropagation()}}>
                 <h3>NAVIGATION</h3>
-                <Link to="/">
+                <Link to="/" onClick={onCloseMenu}>
                     HOME
                 </Link>
-                <Link to="/error">
+                <Link to="/error" onClick={onCloseMenu}>
                     ABOUT ME
                 </Link>
-                <Link to="/#projects" >
-                    PROJECTS
+                <Link to="/contact" onClick={onCloseMenu}>
+                    CONTACT
                 </Link>
             </div>
-        </div>
+        </div>, document.getElementById("overlays"))
     );
 }
 
