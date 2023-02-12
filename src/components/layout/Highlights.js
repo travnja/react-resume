@@ -11,7 +11,7 @@ import {
     descriptionMaster,
     descriptionWork,
     descriptionBEST,
-} from "../../info/descriptions";
+} from "../../store/descriptions";
 
 function Highlight(props) {
     const [showDetails, setShowDetails] = useState(false);

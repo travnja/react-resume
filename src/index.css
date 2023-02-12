@@ -1,24 +1,43 @@
+:root{
+  /* COLORS */
+  --background: rgb(233, 233, 233);
+  --grey-semi-transparent: rgba(214, 214, 214, 0.85);
+  --color-highlight-mild: rgb(76, 76, 76);
+  --color-highlight: rgb(197, 80, 252);
+  --color-highlight-more: rgb(223, 0, 243);
+  --font-color: rgb(85, 85, 85);
+  --font-color-darker: rgb(48, 48, 48);
+  --menu-items-color: rgb(85, 85, 85);
+
+  /* TRANSITIONS */
+  --transition-fastest: all .1s linear;
+  --transition-fast: all .3s ease-out;
+  --transition-slow: all .6s ease-in;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(61, 61, 61);
-  color: white;
-  overflow-x: hidden;
+  background-color: var(--background);
+  letter-spacing: .15rem;
 }
 
 a{
-  color: white;
+  color: var(--color-highlight);
 }
 a:hover{
-  color: rgb(255, 217, 0);
+  color: var(--color-highlight-more);
+}
+p{
+  letter-spacing: .08rem;
+  text-align: center;
 }
 
 h1{
   font-size: 2rem;
+  text-align: center;
 }
 
 code {

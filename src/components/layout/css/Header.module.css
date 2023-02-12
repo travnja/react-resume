@@ -1,38 +1,53 @@
-.background{
-    background-color: rgba(0, 0, 0, 0.315);
-    text-align: center;
-}
-
-.cover{
-    object-fit: cover;
-    width: inherit;
-}
-
-.profile{
-    position: fixed;
-}
-
-.contact{
-    position: fixed;
-    right: 5rem;
-    top: 6rem;
-}
-
-.links{
-    position: fixed;
-    right: 0;
-    left: 25rem;
-    text-align: right;
-    padding: 5%;
-    
-    
-}
-
-.stripe{
-    position:fixed;
-    top: 15rem;
-    background-color: rgb(61, 61, 61);
-    border-bottom: 2px solid white;
+.header-stripe {
+    position: sticky;
+    border-bottom: 4px solid white;
     width: 100%;
+    height: 3rem;
+    transition: var(--transition-fast);
+}
+.header-stripe-active {
+    background-color: var(--menu-items-color);
+    transition: var(--transition-fast);
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0 5%;
+    color: var(--menu-items-color);
+}
+
+.header img {
     height: 2rem;
+    object-fit: fill;
+    filter: invert(33%);
+    transition: var(--transition-fastest);
+}
+
+.header img:hover {
+    height: 2.2rem;
+    filter: invert(50%);
+    transition: var(--transition-fastest);
+    
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.language:hover {
+    cursor: pointer;
+    color: var(--color-highlight-mild);
+    font-weight: bold;
+}
+.selected-language {
+    font-weight: bold;
+}
+
+@media (min-width: 400px) {
+    .header {
+        margin: 0 25%;
+    }
 }

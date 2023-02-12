@@ -1,0 +1,57 @@
+.normal{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+.open{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    margin-top: 0.3rem;
+}
+
+
+.base{
+    height: .2rem;
+    width: 2rem;
+    background-color: var(--menu-items-color);
+    border-radius: 10px;
+    transition: var(--transition-fast);
+}
+
+.normal .middle{
+    opacity: 1;
+}
+
+.normal:hover > .top{
+    transform: translateY(-50%);
+}
+.normal:hover > .bottom{
+    transform: translateY(50%);
+}
+
+.open .top{
+    transform: rotate(45deg) translateX(20%) translateY(250%);
+    background-color: black;
+}
+
+.open .middle{
+    opacity: 0;
+}
+
+.open .bottom{
+    transform: rotate(-45deg) translateX(20%) translateY(-250%);
+    background-color: black;
+}
+
+.open:hover > .top, .open:hover > .bottom{
+    background-color: var(--color-highlight);
+    
+}

@@ -1,26 +1,25 @@
+import { Link } from "react-router-dom";
 
 import classes from "./css/Menu.module.css";
 
-function MenuItem(props){
-    return <li className={classes["menu-item"]} onClick={props.onClick}>{props.children}</li>
-}
+function Menu() {
 
-
-function Menu(){
-
-    function scrollTo(identifier) {
-        const element = document.getElementById(identifier);
-        if(element){
-            element.scrollIntoView({behaviour:"smooth"});
-        }
-    }
-
+    const classFunction = ({ isActive }) => isActive ? classes.active : undefined;
     return (
-        <ul className={classes.menu}>
-            <MenuItem onClick={scrollTo.bind("home")}>...</MenuItem>
-            <li>About me</li>
-            <li>Education</li>
-        </ul>
+        <div className={classes.menu}>
+            <div className={classes["menu-items"]}>
+                <h3>NAVIGATION</h3>
+                <Link to="/">
+                    HOME
+                </Link>
+                <Link to="/error">
+                    ABOUT ME
+                </Link>
+                <Link to="/#projects" >
+                    PROJECTS
+                </Link>
+            </div>
+        </div>
     );
 }
 

@@ -12,7 +12,7 @@
 .summary-item {
     margin: none;
     padding: 0.5rem 2rem;
-    border: 1px solid rgb(61, 61, 61);
+    border: 1px solid var(--grey);
     position: static;
     border-radius: 5%;
     transition: all .3s linear;
@@ -25,8 +25,8 @@
 }
 .summary-item:hover {
     cursor: pointer;
-    border-color: rgb(255, 217, 0);
-    color: rgb(255, 217, 0);
+    border-color: var(--yellow-highlight);
+    color:  var(--yellow-highlight);
     transition: all .2s ease;
 }
 
@@ -40,14 +40,14 @@
 
 /*                  CLOSE BUTTON */
 .close {
-    background-color: rgb(99, 99, 99);
+    background-color:  var(--grey);
     color: white;
     border-radius: 5px;
     margin-left: 1%;
     min-height: 2rem;
 }
 .close:hover {
-    background-color: rgb(255, 217, 0);
+    background-color:  var(--yellow-highlight);
     color: black;
     cursor: pointer;
 }
