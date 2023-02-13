@@ -1,0 +1,53 @@
+.contacts{
+    margin: 0 10%;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--background-semi-transparent);
+}
+
+.contacts p{
+    text-align: left;
+    width: inherit;
+    
+}
+.image-wrapper{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.image-wrapper img{
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+}
+.networks{
+    text-align: center;
+    height: 3rem;
+    padding: 2rem;
+}
+
+
+@media (min-width: 690px){
+    .contacts{
+        margin: 0 40% 10rem 20%;
+    }
+    .image-wrapper{
+        height: 40%;
+    }
+    .image-wrapper img{
+        width: 80%;
+    }
+}
+@media (min-width: 1400px){
+    .contacts{
+        margin: 0 60% 10rem 20%;
+    }
+    .image-wrapper{
+        height: 70%;
+        width: 100%;
+    }
+    .image-wrapper img{
+        width: 60%;
+    }
+}

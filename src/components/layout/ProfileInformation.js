@@ -18,7 +18,7 @@ function AboutMe() {
 function PictureWithDescription() {
     return (
         <div className={classes["profile-picture-wrapper"]}>
-            <img src={ProfilePicture} className={classes["profile-picture"]} />
+            <img src={ProfilePicture} className={classes["profile-picture"]} alt="The handsome guy Honza"/>
             <p>
                 <b>Honza Trávníček</b>
                 <br />

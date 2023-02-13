@@ -1,13 +1,9 @@
-import "./css/UI.css"
+import classes from "./css/ClickableIcon.module.css";
 
-function ClickableIcon(props){
+function ClickableIcon({link, image, alt}){
     return (
-        <a href={props.link}>
-            <img
-                src={props.image}
-                alt="Link to Linkedin"
-                className="clickable-icon"
-            />
+        <a href={link} className={classes.link}>
+            <img src={image} alt={alt} className={classes["icon"]} />
         </a>
     );
 }

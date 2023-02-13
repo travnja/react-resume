@@ -32,7 +32,7 @@ function Header() {
                 <header className={classes.header}>
                     <BurgerIcon onClick={menuToggleHandler} isOpen={isMenuOpen} />
                     <Link to="/">
-                        <img src={HomeIcon} />
+                        <img src={HomeIcon} alt="Home"/>
                     </Link>
                     <div className={classes.languages}>
                         <p

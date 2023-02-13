@@ -1,5 +1,4 @@
 
-import Heart from "../UI/HeartImage";
 import classes from "./css/Mentions.module.css";
 
 function Mentions(){

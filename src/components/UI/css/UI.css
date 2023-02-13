@@ -1,14 +1,4 @@
-.clickable-icon{
-    width: 2rem;
-    height: auto;
-    padding: .3rem;
-}
 
-.clickable-icon:hover{
-    /* border: 2px solid white; */
-    border-radius: 20%; 
-    background-color: var(--yellow-highlight);
-}
 
 .card{
     text-align: center;

@@ -1,0 +1,20 @@
+.link{
+    
+}
+
+.icon{
+    width: 2rem;
+    width: 2rem;
+    padding: .3rem;
+    filter: invert(40%);
+}
+
+
+.link:hover{
+    /* background-color: var(--color-highlight); */
+}
+
+.link:hover > .icon{
+    width: 2.2rem;
+    transform: translateY(-5%);
+}

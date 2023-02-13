@@ -1,4 +1,3 @@
-import { useState } from "react";
 import classes from "./css/BurgerIcon.module.css";
 
 function BurgerIcon({ isOpen, onClick }) {
