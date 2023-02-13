@@ -1,12 +1,12 @@
 import Introduction from "../components/layout/Introduction";
-// import ProfileInformation from "../components/layout/ProfileInformation";
+import ProfileInformation from "../components/layout/ProfileInformation";
 import Heart from "../components/UI/HeartImage";
 
 function HomePage() {
     return (
         <div className="layout">
             <Introduction />
-            {/* <ProfileInformation /> */}
+            <ProfileInformation />
             <Heart />
             
         </div>
