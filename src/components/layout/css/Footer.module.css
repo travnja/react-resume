@@ -1,0 +1,6 @@
+.footer{
+    margin-top: 5rem;
+    width: 100%;
+    background-color: var(--background-semi-transparent);
+    padding: .3rem 0;
+}

@@ -1,6 +1,6 @@
-import Contacts from "../components/layout/Contacts";
-import { Intro } from "../components/layout/Introduction";
-import Mentions from "../components/layout/Mentions";
+import Contacts from "../components/sections/Contacts";
+import { Intro } from "../components/sections/Introduction";
+import Mentions from "../components/sections/Mentions";
 import Heart from "../components/UI/HeartImage";
 
 function ContactPage(){

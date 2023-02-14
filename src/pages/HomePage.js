@@ -1,5 +1,5 @@
-import Introduction from "../components/layout/Introduction";
-import ProfileInformation from "../components/layout/ProfileInformation";
+import Introduction from "../components/sections/Introduction";
+import ProfileInformation from "../components/sections/ProfileInformation";
 import Heart from "../components/UI/HeartImage";
 
 function HomePage() {

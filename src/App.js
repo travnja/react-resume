@@ -1,10 +1,13 @@
+import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 
-import RootWrapper from "./pages/Root";
-import HomePage from "./pages/Home";
-import ErrorPage from "./pages/Error";
-import ContactPage from "./pages/Contact";
+import RootWrapper from "./pages/RootPage";
+import HomePage from "./pages/HomePage";
+import ErrorPage from "./pages/ErrorPage";
+import ContactPage from "./pages/ContactPage";
+
+const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
 
 const router = createBrowserRouter([
     {
@@ -18,16 +21,27 @@ const router = createBrowserRouter([
             },
             {
                 path: "/contact",
-                element: <ContactPage />
-            }
+                element: <ContactPage />,
+            },
+            {
+                path: "/portfolio",
+                element: (
+                    <Suspense fallback={<p>Loading...</p>}>
+                        <PortfolioPage />
+                    </Suspense>
+                ),
+                children: [
+                    {
+                        path: ":projectID",
+                    },
+                ],
+            },
         ],
     },
 ]);
 
 function App() {
-    return (
-        <RouterProvider router={router} />
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;

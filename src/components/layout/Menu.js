@@ -16,11 +16,11 @@ function Menu({onCloseMenu}) {
                 <Link to="/" onClick={onCloseMenu}>
                     HOME
                 </Link>
-                <Link to="/error" onClick={onCloseMenu}>
-                    ABOUT ME
-                </Link>
                 <Link to="/contact" onClick={onCloseMenu}>
                     CONTACT
+                </Link>
+                <Link to="/portfolio" onClick={onCloseMenu}>
+                    PORTFOLIO
                 </Link>
             </div>
         </div>, document.getElementById("overlays"))
