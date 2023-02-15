@@ -2,9 +2,13 @@
     position: sticky;
     width: 100%;
     height: 3rem;
+    padding-top: .5rem;
     transition: var(--transition-fast);
 }
 .header-stripe-active {
+    height: 2.6rem;
+    padding-top: .5rem;
+    width: 100%;
     background-color: var(--menu-items-color);
     transition: var(--transition-fast);
 }

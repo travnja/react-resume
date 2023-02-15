@@ -23,6 +23,7 @@
 }
 .networks{
     text-align: center;
+    display: flexbox;
     height: 3rem;
     padding: 2rem;
 }

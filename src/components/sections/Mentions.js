@@ -13,6 +13,12 @@ function Mentions(){
             <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">
                 Heart icons created by Freepik - Flaticon
             </a>
+            <a href="https://www.flaticon.com/free-icons/uml" title="uml icons">
+                Uml icons created by Freepik - Flaticon
+            </a>
+            <a href="https://www.flaticon.com/free-icons/ux" title="ux icons">
+                Ux icons created by Vectoricons - Flaticon
+            </a>
         </div>
     );
 }

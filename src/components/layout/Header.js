@@ -34,7 +34,7 @@ function Header() {
                     <Link to="/">
                         <img src={HomeIcon} alt="Home"/>
                     </Link>
-                    <div className={classes.languages}>
+                    {/* <div className={classes.languages}>
                         <p
                             onClick={isEnglish ? useCzech : null}
                             className={isEnglish ? classes.language : classes["selected-language"]}
@@ -47,7 +47,7 @@ function Header() {
                         >
                             EN
                         </p>
-                    </div>
+                    </div> */}
                 </header>
             </div>
             {isMenuOpen && <Menu onCloseMenu={menuToggleHandler} />}

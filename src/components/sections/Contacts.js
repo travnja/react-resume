@@ -9,8 +9,8 @@ import ProfilePicture from "../../images/profile-pic.jpg";
 
 const PHONE = "+420 605 551 618";
 const EMAIL = "honza.travnicek85@gmail.com";
-const LINKEDIN_URL = "";
-const GITHUB_URL = "";
+const LINKEDIN_URL = "https://www.linkedin.com/in/travnicek-jan/";
+const GITHUB_URL = "https://github.com/travnja";
 
 function SocialNetworks() {
     return (
