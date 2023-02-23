@@ -8,10 +8,14 @@ function Menu({onCloseMenu}) {
 
     useEscapeKey(onCloseMenu);
 
-    return (
-        createPortal(
+    return createPortal(
         <div className={classes.menu} onClick={onCloseMenu}>
-            <div className={classes["menu-items"]} onClick={(event) => {event.stopPropagation()}}>
+            <div
+                className={classes["menu-items"]}
+                onClick={(event) => {
+                    event.stopPropagation();
+                }}
+            >
                 <h3>NAVIGATION</h3>
                 <Link to="/" onClick={onCloseMenu}>
                     HOME
@@ -19,11 +23,12 @@ function Menu({onCloseMenu}) {
                 <Link to="/contact" onClick={onCloseMenu}>
                     CONTACT
                 </Link>
-                <Link to="/portfolio" onClick={onCloseMenu}>
+                <Link to="/projects" onClick={onCloseMenu}>
                     PORTFOLIO
                 </Link>
             </div>
-        </div>, document.getElementById("overlays"))
+        </div>,
+        document.getElementById("overlays")
     );
 }
 

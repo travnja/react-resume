@@ -1,0 +1,7 @@
+.header{
+    position: absolute;
+    color: white;
+}
+.header ul{
+    list-style: none;
+}

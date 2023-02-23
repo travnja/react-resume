@@ -30,6 +30,7 @@ body {
 
 a{
   color: var(--color-highlight);
+  text-decoration: none;
 }
 a:hover{
   color: var(--color-highlight-more);

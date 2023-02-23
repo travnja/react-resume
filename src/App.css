@@ -1,31 +1,6 @@
-.App {
-  text-align: center;
-  
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .wrapper{
   display: inline;
-}
-
-.header{
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    height: 15rem;
-    display: flex;
-    text-align: center;
-}
-
-.content{
-  margin: 18rem 0 0 10rem;
-  right: 2rem;
-  min-width: 50%;
 }
 
 .layout{

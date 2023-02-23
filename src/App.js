@@ -4,10 +4,11 @@ import "./App.css";
 
 import RootWrapper from "./pages/RootPage";
 import HomePage from "./pages/HomePage";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage, { ProjectsErrorPage } from "./pages/ErrorPage";
 import ContactPage from "./pages/ContactPage";
 
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
+const BandPage = lazy(() => import("./components/portfolio/portfolioProjects/MusicBand/Home"));
 
 const router = createBrowserRouter([
     {
@@ -24,19 +25,23 @@ const router = createBrowserRouter([
                 element: <ContactPage />,
             },
             {
-                path: "/portfolio",
+                path: "/projects",
+                errorElement: <ProjectsErrorPage />,
                 element: (
                     <Suspense fallback={<p>Loading...</p>}>
                         <PortfolioPage />
                     </Suspense>
                 ),
-                children: [
-                    {
-                        path: ":projectID",
-                    },
-                ],
             },
         ],
+    },
+    {
+        path: "/bandpage",
+        element: (
+            <Suspense fallback={<p>Loading...</p>}>
+                <BandPage />
+            </Suspense>
+        ),
     },
 ]);
 

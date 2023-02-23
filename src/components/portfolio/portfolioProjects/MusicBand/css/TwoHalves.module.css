@@ -1,0 +1,25 @@
+.leftright {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 80%;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0, black 0%, rgba(119, 0, 255, 0.2) 100%);
+}
+
+
+.leftright h1 {
+    font-size: 5rem;
+}
+
+.leftright img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 769px) {
+    .leftright {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+}
