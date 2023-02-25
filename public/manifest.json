@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jan Trávníček - resume",
+  "name": "An interactive CV created by Jan Trávníček",
   "icons": [
     {
       "src": "favicon.ico",
