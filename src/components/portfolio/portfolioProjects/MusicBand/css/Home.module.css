@@ -1,10 +1,10 @@
 body{
-    --sem-transparent: rgba(0,0,0,0.8);
-    --background: black;
+    --band-semi-transparent: rgba(0,0,0,0.8);
+    --band-background: black;
 }
 
 .page{
-    background-color: var(--background);
+    background-color: var(--band-background);
     min-height: 100%;
     min-width: 100%;
     position: absolute;
