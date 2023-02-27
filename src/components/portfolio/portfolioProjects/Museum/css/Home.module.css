@@ -1,0 +1,40 @@
+body {
+    --museum-semi-transparent: rgba(255, 255, 255, 0.9);
+    --museum-background: black;
+    --museum-key-color: rgb(174, 0, 255);
+    --museum-key-color-highlight: rgb(255, 0, 234);
+}
+
+.page {
+    background-color: var(--museum-background);
+    color: rgb(70, 70, 70);
+    overflow-x: hidden;
+    font-family: "Times New Roman", Times, serif;;
+}
+    .page p{
+        font-size: 1.2rem;;
+    }
+
+.cover-image {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    filter: grayscale();
+}
+.content {
+    position: absolute;
+    top: 0;
+    margin: 0 10%;
+    width: 80%;
+    background-color: var(--museum-semi-transparent);
+    height: 150rem; ;
+}
+
+
+
+.img-wrapper{
+    align-items: center;
+    width: min-content;
+    height: 3rem;
+}

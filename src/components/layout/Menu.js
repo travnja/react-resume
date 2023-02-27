@@ -18,17 +18,17 @@ function Menu({onCloseMenu}) {
             >
                 <h3>NAVIGATION</h3>
                 <Link to="/" onClick={onCloseMenu}>
-                    HOME
+                    ABOUT ME
                 </Link>
                 <Link to="/contact" onClick={onCloseMenu}>
                     CONTACT
                 </Link>
                 <Link to="/projects" onClick={onCloseMenu}>
-                    PORTFOLIO
+                    FRONTEND PORTFOLIO
                 </Link>
             </div>
         </div>,
-        document.getElementById("overlays")
+        document.getElementById("menu")
     );
 }
 

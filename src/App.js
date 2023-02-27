@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
 const BandPage = lazy(() => import("./components/portfolio/portfolioProjects/MusicBand/Home"));
+const MuseumPage = lazy(() => import("./components/portfolio/portfolioProjects/Museum/Home"));
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
             {
-                path: "",
+                index: true,
                 element: <HomePage />,
             },
             {
@@ -40,6 +41,14 @@ const router = createBrowserRouter([
         element: (
             <Suspense fallback={<p>Loading...</p>}>
                 <BandPage />
+            </Suspense>
+        ),
+    },
+    {
+        path: "/museumpage",
+        element: (
+            <Suspense fallback={<p>Loading...</p>}>
+                <MuseumPage />
             </Suspense>
         ),
     },

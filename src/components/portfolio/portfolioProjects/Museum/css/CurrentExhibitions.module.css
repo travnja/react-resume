@@ -1,0 +1,17 @@
+.exhibition-slider{
+    overflow: hidden;
+    height: 45rem;
+    margin: 3rem;
+    background-color: rgba(134, 134, 134, 0.123);
+    font-variant-caps: all-petite-caps;
+    transition: var(--transition-fast);
+}
+
+.headline{
+    position: absolute;   
+    padding: 1rem  2rem;
+    z-index: 300;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: .4rem;
+    font-size: 1.5rem;;
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classes from "./css/Header.module.css";
 
 import HomeIcon from "../../images/icons/homeIcon.png";
@@ -8,21 +8,11 @@ import BurgerIcon from "../UI/BurgerIcon";
 import Menu from "./Menu";
 
 function Header() {
-    const [searchParams, setSearchParams] = useSearchParams();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    function useEnglish() {
-        setSearchParams({ use: "en" });
-    }
-    function useCzech() {
-        setSearchParams({ use: "cz" });
-    }
 
     function menuToggleHandler() {
         setIsMenuOpen((state) => !state);
     }
-
-    const isEnglish = searchParams.get("use") === "en";
 
     return (
         <>
@@ -34,20 +24,6 @@ function Header() {
                     <Link to="/">
                         <img src={HomeIcon} alt="Home"/>
                     </Link>
-                    {/* <div className={classes.languages}>
-                        <p
-                            onClick={isEnglish ? useCzech : null}
-                            className={isEnglish ? classes.language : classes["selected-language"]}
-                        >
-                            CZ
-                        </p>
-                        <p
-                            onClick={isEnglish ? null : useEnglish}
-                            className={isEnglish ? classes["selected-language"] : classes.language}
-                        >
-                            EN
-                        </p>
-                    </div> */}
                 </header>
             </div>
             {isMenuOpen && <Menu onCloseMenu={menuToggleHandler} />}

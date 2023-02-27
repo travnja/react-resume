@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import classes from "./css/PortfolioList.module.css";
 
 import CoverPicture from "../../images/cover.JPG";
+import YourBandPicture from "../../images/projects/preview-your-band.JPG";
+import MuseumPicture from "../../images/projects/preview-museum.JPG";
 
 function ProjectPreview({ title, picture, description, link, alt }) {
     return (
@@ -20,19 +22,28 @@ function ProjectPreview({ title, picture, description, link, alt }) {
 
 function PortfolioList(){
     return (
-        <div className={classes.list}>
-            <ProjectPreview
-                title="Music Band website"
-                picture={CoverPicture}
-                description="Webpage for Your band including all the concerts, and tickets."
-                link="/bandpage"
-            />
-            <ProjectPreview
-                title="Blabla 2"
-                picture={CoverPicture}
-                description="Lorem Ipsum"
-                link="blabla2"
-            />
+        <div className={classes.projects}>
+            <p>List of projects I made for school or just for fun</p>
+            <div className={classes.list}>
+                <ProjectPreview
+                    title="Music Band"
+                    picture={YourBandPicture}
+                    description="Webpage for Your band."
+                    link="/bandpage"
+                />
+                <ProjectPreview
+                    title="Museum"
+                    picture={MuseumPicture}
+                    description="Main page for a museum of modern art."
+                    link="/museumpage"
+                />
+                <ProjectPreview
+                    title="Other to be added..."
+                    picture={CoverPicture}
+                    description="Lorem Ipsum"
+                    link="/tobeadded"
+                />
+            </div>
         </div>
     );
 }

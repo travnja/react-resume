@@ -23,20 +23,22 @@ function SocialNetworks() {
 
 function Contacts() {
     return (
-        <div className={classes.contacts}>
-            <div className={classes["image-wrapper"]}>
-                <img src={ProfilePicture} alt="Honza, a nice portrait from Stockholm." />
+        <>
+            <div className={classes.contacts}>
+                <div className={classes["image-wrapper"]}>
+                    <img src={ProfilePicture} alt="Honza, a nice portrait from Stockholm." />
+                </div>
+                <p>
+                    Jan Trávníček <br />
+                    <br />
+                    <b>Phone:</b>
+                    {PHONE}
+                    <br />
+                    <b>E-mail:</b> {EMAIL}
+                </p>
+                <SocialNetworks />
             </div>
-            <p>
-                Jan Trávníček <br />
-                <br />
-                <b>Phone:</b>
-                {PHONE}
-                <br />
-                <b>E-mail:</b> {EMAIL}
-            </p>
-            <SocialNetworks />
-        </div>
+        </>
     );
 }
 

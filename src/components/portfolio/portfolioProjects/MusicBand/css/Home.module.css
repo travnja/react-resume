@@ -1,18 +1,26 @@
 body{
     --band-semi-transparent: rgba(0,0,0,0.8);
     --band-background: black;
+    --band-violet: rgb(174, 0, 255);
+    --band-violet-highlight: rgb(255, 0, 234);
 }
 
 .page{
     background-color: var(--band-background);
-    min-height: 100%;
-    min-width: 100%;
     position: absolute;
     color: white;
 }
-
+.page a{
+    color: var(--band-violet);
+}
+.page a:hover{
+    color: var(--band-violet-highlight);
+}
 .page header{
     width: 3rem;
+}
+.page p{
+    font-variant-caps: all-petite-caps;
 }
 
 

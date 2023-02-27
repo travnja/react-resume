@@ -3,7 +3,7 @@ body{
 }
 
 .contacts{
-    margin: 0 10%;
+    margin: 0 10% 3rem 10%;
     height: auto;
     padding: 1rem;
     background-color: var(--background-semi-transparent);
@@ -31,7 +31,6 @@ body{
     height: 3rem;
     padding: 2rem;
 }
-
 
 @media (min-width: 690px){
     .contacts{
