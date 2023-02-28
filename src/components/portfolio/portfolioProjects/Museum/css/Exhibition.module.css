@@ -1,49 +1,74 @@
-.exhibition{
+.exhibition {
     display: grid;
-    grid-template-columns: 60% 40%;
-    filter: grayscale();
+    grid-template-rows: 50% 50%;
     height: 100%;
     transition: var(--transition-fast);
 }
-.exhibition.hide{
+.exhibition.hide {
     display: none;
+    transition: var(--transition-fast);
 }
 
-.exhibition img{
-    height: 100%;
-    width: 200%;
-    grid-column-start: 1;
-    grid-column-end: 2;
+.exhibition img {
+    height: 200%;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
     object-fit: cover;
     transition: var(--transition-fast);
 }
 
-.exhibition:hover{
-    filter:none;
-    transition: var(--transition-fast);
-    cursor: pointer;
-}
-.exhibition:hover >  img{
-    height: 120%;
-    
-    transition: var(--transition-fast);
-}
-
-
-.description{
+.description {
     text-align: left;
-    align-items: center;
+    align-items: baseline;
+    grid-row-start: 2;
+    grid-row-end: 2;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 1rem;
+    margin: auto;
     height: max-content;
-    padding: 0 2rem 3rem 2rem;
+    padding: 0 1rem 1rem 1rem;
+    z-index: 300;
 }
 
-.description p{
+.description p {
     text-align: right;
-    margin: 0;   
+    margin: 0;
 }
 
-.description h1{
+.description h1 {
     text-align: left;
 }
+@media (min-width: 700px) {
+    .exhibition {
+        filter: grayscale();
+        grid-template-columns: 60% 40%;
+        grid-template-rows: none;
+    }
+    .exhibition img{
+        height: 100%;
+        width: 200%;
+    }
+    .description {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin: 1rem;
+    }
+
+    .exhibition img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 1;
+    }
+    .exhibition:hover {
+        filter: none;
+        transition: var(--transition-fast);
+        cursor: pointer;
+    }
+    .exhibition:hover > img {
+        height: 120%;
+
+        transition: var(--transition-fast);
+    }
+}
+/* SLIDE ANIMATION */
+/* TODO */

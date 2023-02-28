@@ -9,11 +9,11 @@ body {
     background-color: var(--museum-background);
     color: rgb(70, 70, 70);
     overflow-x: hidden;
-    font-family: "Times New Roman", Times, serif;;
+    font-family: "Times New Roman", Times, serif;
 }
-    .page p{
-        font-size: 1.2rem;;
-    }
+.page p {
+    font-size: 1.2rem;
+}
 
 .cover-image {
     height: 100%;
@@ -25,16 +25,21 @@ body {
 .content {
     position: absolute;
     top: 0;
-    margin: 0 10%;
-    width: 80%;
+    margin: 0;
+    width: 100%;
     background-color: var(--museum-semi-transparent);
-    height: 150rem; ;
+    height: 150rem;
 }
 
-
-
-.img-wrapper{
+.img-wrapper {
     align-items: center;
     width: min-content;
     height: 3rem;
+}
+
+@media (min-width: 1220px) {
+    .content {
+        margin: 0 10%;
+        width: 80%;
+    }
 }

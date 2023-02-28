@@ -41,7 +41,7 @@ function Contact() {
             <ThreeDots />
             <div className={classes.address}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "ADD-KEY-FOR-PRODUCTION" }}
+                    bootstrapURLKeys={{ key: "" }} // ADD KEY FOR PRODUCTION
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
                 >

@@ -4,7 +4,7 @@
 .address{
     
     height: 20rem;
-    width: 30rem;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     margin: 2rem auto;
 }
@@ -34,8 +34,11 @@
     background-color: white;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 600px) {
     .two-columns{
         grid-auto-flow: column;
+    }
+    .address{
+        width: 30rem;
     }
 }
