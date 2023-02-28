@@ -1,6 +1,6 @@
 .exhibition-slider {
     overflow: hidden;
-    height: min-content;
+    height: 35rem;
     
     font-variant-caps: all-petite-caps;
     transition: var(--transition-fast);
